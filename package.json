@@ -1,0 +1,47 @@
+{
+  "name": "ai-agent-skills-registry",
+  "version": "1.0.0",
+  "description": "A centralized registry for AI agent skills with versioning, ratings, and one-click installation",
+  "main": "dist/index.js",
+  "type": "module",
+  "bin": {
+    "skill": "./dist/cli.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "tsx src/index.ts",
+    "cli": "tsx src/cli.ts",
+    "test": "vitest"
+  },
+  "keywords": [
+    "ai",
+    "agent",
+    "skills",
+    "registry",
+    "marketplace",
+    "claude",
+    "openclaw"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "commander": "^11.1.0",
+    "boxen": "^7.1.1",
+    "chalk": "^5.3.0",
+    "ora": "^7.0.1",
+    "axios": "^1.6.7",
+    "semver": "^7.6.0",
+    "yaml": "^2.3.4",
+    "fs-extra": "^11.2.0",
+    "tar": "^6.2.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.19",
+    "@types/fs-extra": "^11.0.4",
+    "@types/tar": "^6.2.0",
+    "typescript": "^5.3.3",
+    "tsx": "^4.7.1",
+    "vitest": "^1.3.1"
+  }
+}
